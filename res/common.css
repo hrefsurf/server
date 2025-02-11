@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css2?family=Noticia+Text:ital,wght@0,400;0,700;1,400;1,700&display=swap');
+
+body {
+    display: flex;
+    justify-content: space-evenly;
+    font-family: "Noticia Text", serif;
+    background-color: lightyellow;
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        background-color: black;
+        color: white;
+    }
+}
+
+a {
+    text-decoration: none;
+}
+
+#title_surf {
+    color: #E7D283;
+}
+
+#title_ref {
+    color: #DF9755;
+}
+
+#title_h {
+    color: #EB5A3C;
+}
+
+#content-container {
+    width: 100%;
+    max-width: 80rem;
+    flex: 2;
+}
+
+nav > ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+}
+
+nav > ul > li {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+#titlelogo {
+    margin: 0;
+}
+
+nav > ul > li > a {
+    color: #DF9755;;
+}
+
+nav > ul > li > a:visited {
+    color: #DF9755;;
+}
+
+nav > ul > li > a:hover {
+    color: skyblue;
+}
+
+#nav {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    border-bottom: 1px solid orange;
+    border-width: 100%;
+}
+
+#nav-left {
+    padding-left: 0;
+    /* ? why do i need the above line? */
+}
+
+.announce > p {
+    text-align: center;
+    color: goldenrod
+}
+
+/* MARK: Forms */
+/*
+! - The below is not perfect
+Really I want the Sign Up to be off the grid, but it's not that important.
+*/
+.hrsfformtable {
+    display: grid;
+    .hrsfformtable {
+        grid-template-columns: auto;
+    }
+}
+
+@media (min-width: 801px) {
+    .hrsfformtable {
+        grid-template-columns: max-content auto;
+    }
+}
+
+.hrsfformtable > .grid-item {
+    margin: 8px;
+}
+
+.hrsfformtable > .hrsfform-submit-controls {
+    display: flex;
+    justify-content: space-evenly;
+}

@@ -1,0 +1,35 @@
+{% extends "layout.html" %}
+{% block content %}
+<h1>Sign Up</h1>
+<p>
+    You may sign up for hrefsurf using the form below. An account will allow you
+    to submit websites, and eventually will allow you to claim websites as your
+    own.
+</p>
+<p>
+    Please be aware that signups are currently <strong><em>closed</em></strong>,
+    and require an invitation from the server administrator. If you do not have
+    an invitation code, you will not be able to join the server.
+</p>
+<form class="hrsfform" action="" method="POST">
+    <div class="hrsfformtable">
+        <label class="grid-item" for="secret">Secret Invitation Code</label>
+        <input class="grid-item" type="text" id="secret" name="secret" required>
+        <label class="grid-item" for="username">Username</label>
+        <input class="grid-item" type="text" id="username" name="username" required>
+        <label class="grid-item" for="email">Email (not currently verified)</label>
+        <input class="grid-item" type="email" id="email" name="email" required>
+        <label class="grid-item" for="password">Password</label>
+        <input class="grid-item" type="password" id="password" name="password" required>
+
+        <div class="hrsfform-submit-controls">
+            <div></div>
+            <div>
+                <input type="submit" value="Sign Up">
+            </div>
+            <div></div>
+        </div>
+    </div>
+
+</form>
+{% endblock content %}

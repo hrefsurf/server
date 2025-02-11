@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/res/common.css">
+</head>
+
+<body>
+    <div id="side-region-left"></div>
+    <div id="content-container">
+        <nav id="nav">
+            <ul id="nav-left">
+                <li>
+                    <a href="/">
+                        <h1 id="titlelogo"><span id="title_h">h</span><span id="title_ref">ref</span><span id="title_surf">surf</span></h1>
+                    </a>
+                </li>
+                <li><a href="/about">About &rarr;</a></li>
+            </ul>
+            <ul id="nav-right">
+                <li><a href="/auth/login">Login &rarr;</a></li>
+                <li><a href="/auth/signup">Signup &rarr;</a></li>
+            </ul>
+        </nav>
+        
+        {# <div class="announce">
+            <p><em>
+                    hrefsurf is early stage; expect frequent disruptions to
+                    availability, and delays as most content is manually
+                    moderated for safety.
+            </em></p>
+        </div> #}
+
+        {% block content %}
+        {% endblock content %}
+    </div>
+    <div id="side-region-right"></div>
+</body>
+
+</html>
